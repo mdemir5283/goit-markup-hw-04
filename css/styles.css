@@ -9,6 +9,7 @@
   --primary-backround-color: #f5f4fa;
   --secondary-border-color: #ececec;
   --portfolio-projects-border: #eeeeee;
+  --social-icon-color: #afb1b8;
 }
 h1,
 h2,
@@ -205,6 +206,8 @@ h1 {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .body-section {
@@ -312,6 +315,10 @@ h2 {
   margin-bottom: 2px;
 }
 
+.footer-main-container {
+  display: flex;
+}
+
 .footer {
   background: var(--hero-color);
   font-weight: 400;
@@ -332,6 +339,47 @@ h2 {
   line-height: calc(31 / 26);
   margin-bottom: 9px;
   display: block;
+}
+
+.footer-address-container {
+  margin-right: 70px;
+}
+
+.find-us-container p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-color);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-links {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-light-color);
+}
+
+.social-media-links:hover {
+  background-color: var(--accent-blue);
+  color: var(--primary-light-color);
+}
+
+.social-media-svg {
+  fill: currentColor;
 }
 
 ul {
@@ -456,4 +504,80 @@ a {
 }
 .icon :hover {
   fill: var(--accent-blue);
+}
+
+.our-skills-svg {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--primary-backround-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.ourteam-social-svg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ourteam-social-svg > li {
+  margin-right: 10px;
+}
+
+.ourteam-social-links {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--social-icon-color);
+  border-radius: 50%;
+}
+
+.ourteam-social-links-svg {
+  fill: currentColor;
+}
+
+.ourteam-social-links .last-child-class {
+  margin-right: 0px;
+}
+
+.ourteam-social-links:hover {
+  color: var(--primary-light-color);
+  background-color: var(--accent-blue);
+}
+
+.regular-customers-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-brand-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.regular-customers-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--social-icon-color);
+}
+
+.regular-customers-svg {
+  height: 60px;
+  width: 106px;
+  fill: currentColor;
+}
+
+.regular-customers-link:hover {
+  border: 1px solid var(--accent-blue);
 }
