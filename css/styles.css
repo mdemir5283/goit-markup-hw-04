@@ -28,7 +28,9 @@ ul {
 *::after {
   box-sizing: border-box;
 }
-
+.our-skill-container {
+  display: flex;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -64,7 +66,14 @@ a:hover {
   color: var(--accent-blue);
 }
 .hero-section {
-  background: var(--hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--primary-light-color);
   display: flex;
   flex-direction: column;
@@ -439,4 +448,12 @@ a {
   border-right: 1px solid var(--portfolio-projects-border);
   border-bottom: 1px solid var(--portfolio-projects-border);
   padding: 20px 24px;
+}
+.icon,
+.smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon :hover {
+  fill: var(--accent-blue);
 }
