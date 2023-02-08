@@ -456,6 +456,8 @@ a {
 .active-button-all {
   background-color: var(--accent-blue);
   color: var(--primary-light-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-section {
@@ -482,10 +484,15 @@ a {
 .portfolio-projects li {
   background-color: var(--primary-light-color);
   margin-bottom: 30px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(98, 38, 38, 0.12);
+
   border-radius: 4px;
 }
+
+.portfolio-projects li:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(98, 38, 38, 0.12);
+}
+
 .portfolio-projects > li:nth-child(n + 7) {
   margin-bottom: 0px;
 }
@@ -526,7 +533,10 @@ a {
   margin-bottom: 30px;
 }
 
-.ourteam-social-svg > li {
+.ourteam-social-svg > li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links > li:not(:last-child) {
   margin-right: 10px;
 }
 
